@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<link rel="preconnect" href="https://images.unsplash.com">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Honest Auto Repair in Pearland, TX | Brown's Automotive</title>
 <meta name="description" content="Family-run auto repair on E Broadway in Pearland: A/C, brakes, alignment, diagnostics and more. 4.7 stars from 137 Google reviews. Call (281) 997-7604.">
@@ -278,7 +279,7 @@ h2.disp .emb{color:var(--brass)}
 .hours-tbl div>span:first-child{flex-shrink:0}
 .hours-tbl div.today{color:var(--navy);font-weight:700}
 .hours-tbl span.cl{color:var(--steel)}
-.map{border-radius:12px;overflow:hidden;position:relative;min-height:360px;background:var(--navy);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:30px;box-shadow:0 26px 60px -30px rgba(23,33,47,.6)}
+.map{text-decoration:none;border-radius:12px;overflow:hidden;position:relative;min-height:360px;background:var(--navy);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:30px;box-shadow:0 26px 60px -30px rgba(23,33,47,.6)}
 .map:before{content:"";position:absolute;inset:0;opacity:.5;background:
   linear-gradient(rgba(27,42,65,.86),rgba(27,42,65,.86)),
   repeating-linear-gradient(0deg,rgba(255,255,255,.12) 0 1px,transparent 1px 42px),
@@ -352,9 +353,20 @@ footer.site{background:var(--ink);color:rgba(255,255,255,.66);padding:76px 0 120
 .rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
 .rv.in{opacity:1;transform:none}
 .fc.rv.in:nth-child(1){transform:rotate(-.5deg)}.fc.rv.in:nth-child(2){transform:rotate(.7deg)}.fc.rv.in:nth-child(3){transform:rotate(-.8deg)}.fc.rv.in:nth-child(4){transform:rotate(.5deg)}
+.bay{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-auto-rows:300px;gap:16px;margin-top:16px}
+.bay-ph{position:relative;margin:0;border-radius:12px;overflow:hidden;background:var(--navy-2)}
+.bay-ph img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s}
+.bay-ph:hover img{transform:scale(1.04)}
+.bay-ph figcaption{position:absolute;inset:auto 0 0 0;padding:40px 18px 14px;background:linear-gradient(transparent,rgba(10,16,24,.85));display:flex;justify-content:space-between;align-items:flex-end;gap:10px;flex-wrap:wrap}
+.bay-ph b{font-family:var(--disp);font-weight:600;text-transform:uppercase;letter-spacing:.04em;font-size:1.05rem;color:#fff}
+.bay-ph small{font-size:.66rem;color:rgba(255,255,255,.66)}.bay-ph small a{color:inherit}
+.bay-note{font-size:.8rem;color:rgba(255,255,255,.5);margin-top:10px}
+.map .ph-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.42;filter:saturate(.7)}
+.map .ph-cr{position:absolute;right:12px;bottom:10px;z-index:2;font-size:.66rem;color:rgba(255,255,255,.66)}
 @media (prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
 
 @media (max-width:1000px){
+  .bay{grid-template-columns:1fr 1fr}.bay{grid-auto-rows:260px}.bay-ph:first-child{grid-column:1/-1}
   .bar nav,.bar .callbox{display:none}
   .hero{grid-template-columns:1fr}
   .hero-copy{padding:104px 22px 40px}
@@ -371,6 +383,7 @@ footer.site{background:var(--ink);color:rgba(255,255,255,.66);padding:76px 0 120
   .ft{grid-template-columns:1fr 1fr}
 }
 @media (max-width:640px){
+  .bay{grid-template-columns:1fr}
   body{font-size:16px}
   .bar .btn{display:none}
   .trust-grid{grid-template-columns:1fr}
@@ -548,6 +561,12 @@ footer.site{background:var(--ink);color:rgba(255,255,255,.66);padding:76px 0 120
       <div class="svc rv"><div class="ic"><svg aria-hidden="true"><use href="#w-temp"/></svg></div><h3>Cooling &amp; Engine Repair</h3><p>Overheating, leaks and engine trouble diagnosed and fixed, often the same day you bring it in.</p></div>
       <div class="svc rv"><div class="ic"><svg aria-hidden="true"><use href="#w-oil"/></svg></div><h3>General Maintenance</h3><p>Routine service for foreign and domestic vehicles, done when it's due. <span class="conf">Confirm: oil changes, inspections, auto body?</span></p></div>
     </div>
+    <div class="bay">
+      <figure class="bay-ph rv"><img src="https://images.unsplash.com/photo-1613214150384-14921ff659b2?ixid=M3wxMTE2MjkxfDB8MXxzZWFyY2h8MXx8bWVjaGFuaWMlMjBicmFrZSUyMHJlcGFpcnxlbnwxfHx8fDE3OTMyMDY3NTB8MA&ixlib=rb-4.1.0&w=900&q=75&fm=jpg&fit=crop" alt="A worn brake rotor and caliper with the wheel off" loading="lazy"><figcaption><b>Brakes &amp; rotors</b><small>Photo: <a href="https://unsplash.com/@ben_brunner?utm_source=site_previews&amp;utm_medium=referral" target="_blank" rel="noopener">Benjamin Brunner</a> / Unsplash</small></figcaption></figure>
+      <figure class="bay-ph rv"><img src="https://images.unsplash.com/photo-1785085309848-579f13fd937e?ixid=M3wxMTE2MjkxfDB8MXxzZWFyY2h8M3x8bWVjaGFuaWMlMjBlbmdpbmUlMjBiYXl8ZW58MXx8fHwxNzkzMjA2NzUxfDA&ixlib=rb-4.1.0&w=900&q=75&fm=jpg&fit=crop" alt="A mechanic working in an engine bay" loading="lazy"><figcaption><b>Under the hood</b><small>Photo: <a href="https://unsplash.com/@aint_jayan?utm_source=site_previews&amp;utm_medium=referral" target="_blank" rel="noopener">Jayan Yasovarman</a> / Unsplash</small></figcaption></figure>
+      <figure class="bay-ph rv"><img src="https://images.unsplash.com/photo-1620707044570-c0dc1576bedd?ixid=M3wxMTE2MjkxfDB8MXxzZWFyY2h8N3x8dGlyZSUyMGFsaWdubWVudCUyMG1lY2hhbmljfGVufDF8fHx8MTc5MzIwNjc1Mnww&ixlib=rb-4.1.0&w=900&q=75&fm=jpg&fit=crop" alt="A mechanic fitting a wheel on a blue car" loading="lazy"><figcaption><b>Tires &amp; wheels</b><small>Photo: <a href="https://unsplash.com/@stewardesign?utm_source=site_previews&amp;utm_medium=referral" target="_blank" rel="noopener">Steward Masweneng</a> / Unsplash</small></figcaption></figure>
+    </div>
+    <p class="bay-note">Stock photos as placeholders. Photos of Jimmy's own shop and bays go here.</p>
     <div class="svc-foot"><svg aria-hidden="true" style="width:18px;height:18px;color:var(--brass)"><use href="#bolt"/></svg> Also ask us about key cutting and tire &amp; wheel service. <span class="conf">Confirm full service list with client</span></div>
   </div>
 </section>
@@ -634,6 +653,7 @@ footer.site{background:var(--ink);color:rgba(255,255,255,.66);padding:76px 0 120
       </div></div>
     </div>
     <a class="map rv" href="https://www.google.com/maps/dir/?api=1&destination=3906+E+Broadway+St+Pearland+TX+77581" target="_blank" rel="noopener" aria-label="Open directions to Brown's Automotive in Google Maps">
+      <img class="ph-bg" src="https://images.unsplash.com/photo-1792792963003-e45290c28443?ixid=M3wxMTE2MjkxfDB8MXxzZWFyY2h8NXx8Y2FyJTIwb24lMjBsaWZ0JTIwZ2FyYWdlfGVufDF8fHx8MTc5MzIwNjc1MXww&ixlib=rb-4.1.0&w=1100&q=75&fm=jpg&fit=crop" alt="" loading="lazy">
       <div class="pin"><svg aria-hidden="true"><use href="#pin"/></svg></div>
       <div class="m-txt">
         <b>Brown's Automotive</b>
@@ -642,6 +662,7 @@ footer.site{background:var(--ink);color:rgba(255,255,255,.66);padding:76px 0 120
       </div>
     </a>
   </div>
+  <div class="w"><p class="bay-note" style="color:var(--steel);text-align:right">Map card Photo: <a href="https://unsplash.com/@xalo_mustafa?utm_source=site_previews&amp;utm_medium=referral" target="_blank" rel="noopener">Mustafa Sheikhmouss</a> / Unsplash (placeholder for a shop photo)</p></div>
 </section>
 
 <!-- Appointment -->
